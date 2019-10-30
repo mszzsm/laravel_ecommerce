@@ -19,7 +19,7 @@
     <body>
         <div class="container">
             <div class="flex-center position-ref full-height">
-                <h1 class="greeteg"> Hello: {{$user->name}}   </h1>
+
                 @if (Route::has('login'))
                     <div class="top-right links">
                         @auth
@@ -41,6 +41,7 @@
 
                     <div class="links">
                         <a href="{{URL::to('/main')}}">Login</a>
+                        <a href="{{URL::to('/admin')}}">Admin</a>
                     </div>
                 </div>
             </div>
