@@ -47,4 +47,9 @@ class MainController extends Controller
         Auth::logout();
         return redirect('/main');
     }
+
+    function admin()
+    {
+        return view('admin/admin');
+    }
 }
